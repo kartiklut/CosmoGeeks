@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cnb="http://schemas.android.com/tools"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:cnb_backgroundColor="#6A89CC"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/discover"
+        android:icon="@drawable/ic_center_focus_strong_black_24dp"
+        app:cnb_backgroundColor="#F3B431"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        android:title="Discover"/>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        app:cnb_backgroundColor="#ff785b"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        android:title="Account"/>
+    android:title="Discover"/>
+</menu>

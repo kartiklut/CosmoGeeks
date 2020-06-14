@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExploreFragment"
+    android:background="#2C3335">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPLORE"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#487EB0"
+        android:id="@+id/text"
+        ></TextView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:layout_below="@+id/text">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2C3335"
+            android:layout_below="@+id/text">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NASA"
+                android:textSize="30dp"
+                android:textColor="#F3B431"
+                android:id="@+id/text1"
+                ></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlist_videos"
+                android:scrollbars="none"
+                android:background="#2C3335"
+                android:padding="2dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="10dp"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_below="@+id/mlist_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPACEX"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F3B431"
+                android:id="@+id/text2"
+                ></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlist_videos_spacex"
+                android:scrollbars="none"
+                android:background="#2C3335"
+                android:padding="2dp"
+                android:elevation="2dp"
+
+                app:cardCornerRadius="10dp"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_below="@+id/mlist_videos_spacex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="European Space Agency"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F3B431"
+                android:id="@+id/text3"
+                ></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlist_videos_esa"
+                android:scrollbars="none"
+                android:background="#2C3335"
+                android:padding="2dp"
+                android:elevation="2dp"
+
+                app:cardCornerRadius="10dp"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_below="@+id/mlist_videos_esa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canadian Space Agency"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F3B431"
+                android:id="@+id/text4"
+                ></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlist_videos_csa"
+                android:scrollbars="none"
+                android:background="#2C3335"
+                android:padding="2dp"
+                android:elevation="2dp"
+
+                app:cardCornerRadius="10dp"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

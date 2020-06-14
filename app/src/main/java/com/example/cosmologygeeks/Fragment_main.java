@@ -39,7 +39,7 @@ public class Fragment_main extends AppCompatActivity {
                         fragment=new HomeFragment();
                         break;
                     case R.id.discover:
-                        fragment=new DiscoverFragment();
+                        fragment=new ExploreFragment();
                         break;
                     case R.id.account:
                         fragment=new AccountFragment();

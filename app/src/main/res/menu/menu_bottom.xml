@@ -14,11 +14,11 @@
 
     <item
         android:id="@+id/discover"
-        android:icon="@drawable/ic_center_focus_strong_black_24dp"
+        android:icon="@drawable/ic_explore_black_24dp"
         app:cnb_backgroundColor="#F3B431"
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff"
-        android:title="Discover"/>
+        android:title="Explore"/>
 
     <item
         android:id="@+id/account"

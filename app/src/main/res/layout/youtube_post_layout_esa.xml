@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_shadow_color="#616C6F"
+        app:neomorph_highlight_color="#2C3335"
+        >
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            >
+            <ImageView
+                android:id="@+id/imageViewThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="video Published at"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="video Title"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textViewDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="1dp"
+                    android:text="video description"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+</LinearLayout>

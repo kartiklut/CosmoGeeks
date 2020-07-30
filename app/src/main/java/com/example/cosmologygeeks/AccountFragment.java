@@ -66,7 +66,12 @@ public class AccountFragment extends Fragment {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out my app at: playstore");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {

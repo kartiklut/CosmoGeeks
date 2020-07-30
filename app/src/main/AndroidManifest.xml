@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RazorPayActivity"></activity>
+        <activity android:name=".AbousUsActivity"></activity>
+        <activity android:name=".RazorPayActivity" />
         <activity android:name=".Fragment_main" />
         <activity android:name=".VerifyPhoneNumberActivity" />
         <activity android:name=".PhoneActivity" />

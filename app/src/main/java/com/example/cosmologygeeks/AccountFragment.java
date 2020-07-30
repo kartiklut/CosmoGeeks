@@ -59,7 +59,8 @@ public class AccountFragment extends Fragment {
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(v.getContext(), AbousUsActivity.class);
+                startActivity(intent);
             }
         });
         share.setOnClickListener(new View.OnClickListener() {

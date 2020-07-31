@@ -52,6 +52,12 @@ public class HomeFragmentRecyclerAdapter extends RecyclerView.Adapter<HomeFragme
                     Intent intent=new Intent(v.getContext(), NeowsActivity.class);
                     v.getContext().startActivity(intent);
                 }
+                else if(position==2)
+                {
+
+                    Intent intent=new Intent(v.getContext(), PeopleActivity.class);
+                    v.getContext().startActivity(intent);
+                }
             }
         });
     }

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AstronomyPictureActivity"></activity>
+        <activity android:name=".BottomSheetInfoActivity"></activity>
+        <activity android:name=".NeowsActivity" />
+        <activity android:name=".AstronomyPictureActivity" />
         <activity android:name=".AbousUsActivity" />
         <activity android:name=".RazorPayActivity" />
         <activity android:name=".Fragment_main" />

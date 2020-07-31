@@ -49,7 +49,7 @@ public class HomeFragmentRecyclerAdapter extends RecyclerView.Adapter<HomeFragme
                 else if(position==1)
                 {
 
-                    Intent intent=new Intent(v.getContext(), AstronomyPictureActivity.class);
+                    Intent intent=new Intent(v.getContext(), NeowsActivity.class);
                     v.getContext().startActivity(intent);
                 }
             }

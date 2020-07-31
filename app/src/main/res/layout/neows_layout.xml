@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_shadow_color="#616C6F"
+        app:neomorph_highlight_color="#2C3335"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+            <TextView
+                android:id="@+id/neorefid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Neo Ref. Id"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_margin="5dp"
+                android:textColor="#30336B" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/objectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="35dp"
+                    android:text="Object Name"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="#E2A500" />
+
+                <TextView
+                    android:id="@+id/objectId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Object Id"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="#30336B" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+</LinearLayout>

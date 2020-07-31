@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArrangeActivity"
+    android:id="@+id/main"
+    android:background="#2C3335"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/neptune" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="160dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/venus" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="240dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/earth" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/jupiter" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mars" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="160dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/saturn"/>
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="240dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mercury" />
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/uranus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:textColor="#c1c1c1"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:text="Show Answer"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/blankedittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dp"
+        >
+    </Button>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img1"
+        ></ImageView>
+
+
+</RelativeLayout>

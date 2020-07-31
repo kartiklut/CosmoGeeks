@@ -13,8 +13,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -23,6 +26,8 @@ import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdCallback;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 /**
@@ -30,8 +35,10 @@ import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
  */
 public class AccountFragment extends Fragment {
 
-    TextView payment,rate,feedback,about,share,logout;
+    TextView payment,rate,feedback,about,share,logout,userprofile,useremailll;
+    ImageView imageView;
     private RewardedAd rewardedAd;
+    FirebaseAuth mAuth;
 
     public AccountFragment() {
         // Required empty public constructor
@@ -49,6 +56,19 @@ public class AccountFragment extends Fragment {
         about=v.findViewById(R.id.aboutus);
         share=v.findViewById(R.id.share);
         logout=v.findViewById(R.id.logout);
+        imageView=v.findViewById(R.id.user_profile_photo);
+        userprofile=v.findViewById(R.id.user_profile_name);
+        useremailll=v.findViewById(R.id.user_email);
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        Glide.with(this)
+                .load(user.getPhotoUrl())
+                .apply(RequestOptions.circleCropTransform())
+                .into(imageView);
+        userprofile.setText(user.getDisplayName());
+        useremailll.setText(user.getEmail());
 
         MobileAds.initialize(v.getContext(), new OnInitializationCompleteListener() {
             @Override
@@ -101,6 +121,8 @@ public class AccountFragment extends Fragment {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(v.getContext(), getstartedActivity.class));
 
             }
         });

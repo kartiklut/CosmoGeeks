@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="#2C3335"
+    >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home" />
+        android:layout_height="190dp"
+        android:id="@+id/image"
+        android:background="@drawable/spaceimage"
+        android:text="CosmoGeeks"
+        android:paddingTop="15dp"
+        android:textSize="25dp"
+        android:paddingLeft="110dp"
+        android:textColor="#FFF"
+        android:textStyle="italic"
+        ></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_home"
+        android:scrollbars="none"
+        android:background="#2C3335"
+        android:padding="2dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
 
-</FrameLayout>
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

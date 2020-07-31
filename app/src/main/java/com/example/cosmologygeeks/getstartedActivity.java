@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -66,7 +67,9 @@ public class getstartedActivity extends AppCompatActivity {
         phoneloginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Uri uri;
+                Intent intent=new Intent(getstartedActivity.this, PhoneActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -34,6 +34,7 @@ public class HomeFragmentRecyclerAdapter extends RecyclerView.Adapter<HomeFragme
     @Override
     public void onBindViewHolder(@NonNull HomeFragmentRecyclerAdapter.viewHolder holder, final int position) {
         holder.title.setText(arrayList.get(position).getName());
+        holder.shortsummary.setText(arrayList.get(position).getShortsummary());
         holder.thumbnail.setImageResource(arrayList.get(position).getImage());
 
 
@@ -78,11 +79,14 @@ public class HomeFragmentRecyclerAdapter extends RecyclerView.Adapter<HomeFragme
     public class viewHolder extends RecyclerView.ViewHolder {
         ImageView thumbnail;
         TextView title;
+        TextView shortsummary;
+
 
         public viewHolder(View itemView) {
             super(itemView);
             thumbnail =  itemView.findViewById(R.id.imageViewThumb);
             title =  itemView.findViewById(R.id.textViewTitle);
+            shortsummary =  itemView.findViewById(R.id.textViewDate);
 
         }
 

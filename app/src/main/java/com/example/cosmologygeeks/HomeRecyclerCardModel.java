@@ -4,6 +4,15 @@ public class HomeRecyclerCardModel {
 
     int image;
     String name;
+    String shortsummary;
+
+    public String getShortsummary() {
+        return shortsummary;
+    }
+
+    public void setShortsummary(String shortsummary) {
+        this.shortsummary = shortsummary;
+    }
 
     public int getImage() {
         return image;

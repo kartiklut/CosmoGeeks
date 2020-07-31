@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
         android:layout_width="wrap_content"
@@ -21,9 +21,10 @@
             >
             <ImageView
                 android:id="@+id/imageViewThumb"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
                 android:src="@drawable/blackhole"
                 android:background="@color/colorText"/>
 
@@ -43,19 +44,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:text="Astronomy Picture of the Day"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:textSize="25dp"
+                    android:text="Astronomy\nPicture\n of the\n Day"
                     android:textStyle="bold"
-                    android:singleLine="true"
-                    android:textColor="@android:color/white" />
+                    android:textColor="#6A89CC"
+              />
 
 
             </LinearLayout>

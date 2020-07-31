@@ -22,7 +22,8 @@ public class HomeFragment extends Fragment {
     ArrayList<HomeRecyclerCardModel> arrayList;
     RecyclerView recyclerView;
     int icons[] = {R.drawable.blackhole,R.drawable.blackhole,R.drawable.blackhole,R.drawable.blackhole};
-    String iconsName[] = {"Astronomy Picture of the Day", "Meteroids Near Earth", "Peoples in Space tight now", "Re-arrange Planets"};
+    String iconsName[] = {"Astronomy\n Picture \nof the \nDay", "Meteroids \nNear \nEarth", "How many\n peoples in\n Space \nright now?", "Re-arrange \nPlanets"};
+    String shortsummary[] = {"BlackHole","Full Details","ISS","Fun Game"};
 
 
     public HomeFragment() {
@@ -45,6 +46,7 @@ public class HomeFragment extends Fragment {
             HomeRecyclerCardModel homeRecyclerCardModel = new HomeRecyclerCardModel();
             homeRecyclerCardModel.setImage(icons[i]);
             homeRecyclerCardModel.setName(iconsName[i]);
+            homeRecyclerCardModel.setShortsummary(shortsummary[i]);
 
             //add in array list
             arrayList.add(homeRecyclerCardModel);

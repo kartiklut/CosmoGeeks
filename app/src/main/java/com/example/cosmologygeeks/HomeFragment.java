@@ -21,7 +21,7 @@ public class HomeFragment extends Fragment {
 
     ArrayList<HomeRecyclerCardModel> arrayList;
     RecyclerView recyclerView;
-    int icons[] = {R.drawable.blackhole,R.drawable.blackhole,R.drawable.blackhole,R.drawable.blackhole};
+    int icons[] = {R.drawable.blackhole,R.drawable.meteoroid,R.drawable.astronaut,R.drawable.spacegame};
     String iconsName[] = {"Astronomy\n Picture \nof the \nDay", "Meteroids \nNear \nEarth", "How many\n peoples in\n Space \nright now?", "Re-arrange \nPlanets"};
     String shortsummary[] = {"BlackHole","Full Details","ISS","Fun Game"};
 

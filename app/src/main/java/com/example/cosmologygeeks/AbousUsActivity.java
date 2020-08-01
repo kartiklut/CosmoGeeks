@@ -25,7 +25,7 @@ public class AbousUsActivity extends AppCompatActivity {
                 .isRTL(false)
                 .enableDarkMode(false)
                 .setImage(R.drawable.cosmo)
-                .setDescription("Space Apps is annual NASA's global hackathon,first held in 14.8 Billion Years Ago, and serves as innovation incubation and civic engagement program." +
+                .setDescription("This Application is developed by Time Traveller , He loves Cosmology , so Application name is CosmoGeeks" +
                         "\n" +
                         "Founded - Before Big Bang"+"\n"+"Headquaters - Ganymede"
                         )

@@ -2,7 +2,7 @@
 Tagline- CosmoGeeks - explore the space with us
 
 # About
-CosmoGeeks will be a Mobile Application and compatible on both IOS and Android.It will have multiple features like youtube channel notifications of all the Space Channels.
+CosmoGeeks will be a Mobile Application and compatible on Android.It will have multiple features like youtube channel notifications of all the Space Channels.
 
 It will takes user location as an input and gives the timings of rising and set of visible planets on that day above that users night sky.
 
